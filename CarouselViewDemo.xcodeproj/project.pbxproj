@@ -13,6 +13,10 @@
 		F9C140A01C916B22001382CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C1409E1C916B22001382CD /* Main.storyboard */; };
 		F9C140A21C916B22001382CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C140A11C916B22001382CD /* Assets.xcassets */; };
 		F9C140A51C916B22001382CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C140A31C916B22001382CD /* LaunchScreen.storyboard */; };
+		F9C140AF1C916B3F001382CD /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9C140AC1C916B3F001382CD /* 0.jpg */; };
+		F9C140B01C916B3F001382CD /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9C140AD1C916B3F001382CD /* 1.jpg */; };
+		F9C140B11C916B3F001382CD /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9C140AE1C916B3F001382CD /* 2.jpg */; };
+		F9C140B41C916B4A001382CD /* CarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C140B31C916B4A001382CD /* CarouselView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,11 @@
 		F9C140A11C916B22001382CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C140A41C916B22001382CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C140A61C916B22001382CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9C140AC1C916B3F001382CD /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		F9C140AD1C916B3F001382CD /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		F9C140AE1C916B3F001382CD /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		F9C140B21C916B4A001382CD /* CarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselView.h; sourceTree = "<group>"; };
+		F9C140B31C916B4A001382CD /* CarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,15 @@
 		F9C140941C916B22001382CD /* CarouselViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F9C140AC1C916B3F001382CD /* 0.jpg */,
+				F9C140AD1C916B3F001382CD /* 1.jpg */,
+				F9C140AE1C916B3F001382CD /* 2.jpg */,
 				F9C140981C916B22001382CD /* AppDelegate.h */,
 				F9C140991C916B22001382CD /* AppDelegate.m */,
 				F9C1409B1C916B22001382CD /* ViewController.h */,
 				F9C1409C1C916B22001382CD /* ViewController.m */,
+				F9C140B21C916B4A001382CD /* CarouselView.h */,
+				F9C140B31C916B4A001382CD /* CarouselView.m */,
 				F9C1409E1C916B22001382CD /* Main.storyboard */,
 				F9C140A11C916B22001382CD /* Assets.xcassets */,
 				F9C140A31C916B22001382CD /* LaunchScreen.storyboard */,
@@ -136,9 +150,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C140B11C916B3F001382CD /* 2.jpg in Resources */,
+				F9C140AF1C916B3F001382CD /* 0.jpg in Resources */,
 				F9C140A51C916B22001382CD /* LaunchScreen.storyboard in Resources */,
 				F9C140A21C916B22001382CD /* Assets.xcassets in Resources */,
 				F9C140A01C916B22001382CD /* Main.storyboard in Resources */,
+				F9C140B01C916B3F001382CD /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +168,7 @@
 			files = (
 				F9C1409D1C916B22001382CD /* ViewController.m in Sources */,
 				F9C1409A1C916B22001382CD /* AppDelegate.m in Sources */,
+				F9C140B41C916B4A001382CD /* CarouselView.m in Sources */,
 				F9C140971C916B22001382CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,10 +20,38 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+static const CGFloat kCarouselDefaultScrollInterval = 2.0;
 
+@class CarouselView;
+
+@protocol CarouselViewDelegate <NSObject>
+
+@required
+- (void)carousel:(CarouselView *)carousel columnView:(UIView *)view forIndex:(NSInteger)index;
+
+- (NSInteger)numberOfCarouselColumns;
+
+@optional
+- (void)carousel:(CarouselView *)carousel didTapAtIndex:(NSInteger)index;
 
 @end
 
+@interface CarouselView : UIView
+
+@property (nonatomic, weak) id<CarouselViewDelegate> delegate;
+
+/***  最少1s，默认2s */
+@property (nonatomic, assign) CGFloat scrollInterval;
+
+@property (nonatomic, assign) NSInteger currentIndex;
+
+/***  默认 YES */
+@property (nonatomic, assign) BOOL showsPageControl;
+
+- (void)startAutoScroll;
+- (void)stopAutoScroll;
+
+@end
